@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="/index.css">
+
+    <!----------------------------Fuentes----------------------------------------------->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="Background_Container" id="background">
+        
+        <div class="overlay">
+            <nav class="nav_bar" id="nav_bar">
+                <a href="#nav_bar"><img src="./media/logo.jpeg" alt="logo" class="logo"></a>
+                <div class="lenguages_buttons">
+                    <button class="lenguage_button es" onclick="setLanguage('es')"></button>
+                    <button class="lenguage_button eng" onclick="setLanguage('eng')"></button>
+                    <button class="lenguage_button pt" onclick="setLanguage('pt')"></button>
+                </div>
+            </nav>
+            <div class="content">
+                <h1 class="main_text" id="main_title"></h1>
+                <h3 class="main_text" id="main_text"></h3>
+
+                <a href="#form_container">
+                    <Button class="act_Button" id="act_Button"></Button>
+                </a>
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="info_container">
+
+        <img src="./media/img4.jpg" alt="" class="img_text">
+         
+        <div class="text_container">
+            <p class="info_text" id="info_text1"></p>
+        </div>
+
+        <div class="text_container">
+            <h4 id="title_list"></h4>
+            <ul class="list info_text">
+                <li id="li1"></li>
+                <li id="li2"></li>
+                <li id="li3"></li>
+                <li id="li4"></li>
+            </ul>
+            
+        </div>
+        <img src="./media/img5.jpg" alt="" class="img_text">
+        
+    </div>
+
+
+    <div class="contact_Container">
+
+        <p class="contact_title" id="contact_title"></p>
+        <form class="form_container" id="form_container">
+
+            <div class="data_input_container">
+                <div class="inputs">
+                    <input type="text" name="name" class="form_input" id="name" required> 
+    
+                    <input type="text" name="apellido" class="form_input" id="apellido" required> 
+                    
+                    <input type="email" name="reply_to" required class="form_input" id="email"> 
+                </div>
+                <textarea name="message" required class="form_input mesagge_text" id="message"></textarea>
+            </div>
+            
+
+            <input type="submit" class="button_Form" id="send_button">
+         
+        </form>
+
+    </div>
+    
+
+    <script src="index.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <script type="text/javascript">emailjs.init('54A3nRZ4hSI2eSp4J')</script>
+</body>
+</html>

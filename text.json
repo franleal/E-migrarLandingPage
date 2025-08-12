@@ -1,0 +1,67 @@
+{
+    "es":{
+        "title":"Bienvenido a E-migrAR",
+        "main_text":"Asesoría migratoria para una llegada segura y sin errores a Argentina",
+        "act_Button":"Solicita tu consulta",
+        "info_text1": [
+            "Migrar a Argentina es una decisión trascendental. Ya sea que busques tus raíces, nuevas oportunidades o una mejor calidad de vida, elegir el camino migratorio correcto desde el inicio es fundamental.",
+            "Argentina ofrece distintas vías legales (residencia temporal, permanente o ciudadanía), pero cada caso es único: nacionalidad, vínculos, profesión, todo cuenta. Un error puede significar demoras, rechazos o incluso la imposibilidad de quedarte.",
+            "Contar con una consultoría especializada es más que una ayuda, es la diferencia entre integrarte exitosamente en Argentina o enfrentar trabas innecesarias."
+        ],     
+        "title_list":"En E-migrAR te ayudamos a:",
+        "li1":"Elegir la mejor opción migratoria para tu caso.",
+        "li2":"Evitar errores que generan demoras o inadmisiones.",
+        "li3":"Planificar tu llegada desde el exterior o ya en el país.",
+        "li4":"Obtener tus papeles con respaldo legal, orden y claridad.",
+        "contact_title":"Solicitá tu consulta online y empecemos juntos el camino correcto",
+        "nombre":"Ingrese su nombre",
+        "apellido":"Ingrese su apellido",
+        "email":"Ingrese su email",
+        "mensaje":"Escriba su mensaje",
+        "send_button":"Enviar mensaje"
+    },
+    "eng":{
+        "title":"Welcome to E-migrAR",
+        "main_text":"Migration consulting for a safe and error-free arrival in Argentina",
+        "act_Button":"Schedule your consultation",
+        "info_text1": [
+            "Migrating to Argentina is a major life decision. Whether you're coming in search of your roots, new opportunities, or a better quality of life, choosing the right migration path from the start is essential.",
+            "Argentina offers multiple pathways to temporary or permanent residency, and even citizenship—but not all of them apply to your situation. Each case—depending on your nationality, ancestry, family ties, or professional activity—may require a different route, with its own requirements and timelines. A mistake in choosing or submitting your application can lead to delays, rejections, or even limit your ability to stay legally in the country.",
+            "Having expert consulting is more than just helpful, It’s the difference between successfully settling in Argentina or facing unnecessary obstacles."
+        ],       
+        "title_list":"At e-migrAR, we help you:",
+        "li1":"Identify the migration option that best suits your profile.",
+        "li2":"Avoid errors that cause delays or inadmissibility.",
+        "li3":"Plan your migration with confidence, whether from abroad or already in Argentina.",
+        "li4":"Obtain your documents with clarity, organization, and legal support.",
+        "contact_title":"Book your first online consultation and let’s start the right path together.",
+        "nombre": "Enter your first name",
+        "apellido": "Enter your last name",
+        "email": "Enter your email",
+        "mensaje": "Write your message",
+        "send_button": "Send message"
+    },
+    "pt":{
+        "title":"Bem-vindo à E-migrAR",
+        "main_text":"Consultoria migratória para uma chegada segura e sem erros à Argentina",
+        "act_Button":"Agende sua consulta",
+        "info_text1": [
+            "Migrar para a Argentina é uma decisão importante. Seja em busca de suas raízes, de novas oportunidades ou de uma melhor qualidade de vida, é essencial escolher o caminho migratório certo desde o início.",
+            "A Argentina oferece diversas vias para residência temporária, permanente e até cidadania — mas nem todas se aplicam ao seu caso. Cada situação — por nacionalidade, ascendência, vínculos familiares ou atividade profissional — pode exigir um caminho diferente, com requisitos e prazos próprios. Um erro na escolha ou na apresentação do pedido pode causar atrasos, recusas ou até limitar sua possibilidade de permanecer legalmente no país.",
+            "Contar com uma consultoria especializada é mais do que uma ajuda, é a diferença entre se integrar com sucesso na Argentina ou enfrentar obstáculos desnecessários."
+        ],    
+        "title_list":"Na E-migrAR, ajudamos você a:",
+        "li1":"Identificar a opção migratória mais adequada ao seu perfil.",
+        "li2":"Evitar erros que causam atrasos ou inadmissões.",
+        "li3":"Planejar sua migração com segurança, estando no exterior ou já na Argentina.",
+        "li4":"Obter sua documentação com clareza, organização e respaldo legal.",
+        "contact_title":"Agende sua primeira consulta online e vamos juntos iniciar o caminho certo",
+        "nombre": "Digite seu nome",
+        "apellido": "Digite seu sobrenome",
+        "email": "Digite seu e-mail",
+        "mensaje": "Escreva sua mensagem",
+        "send_button": "Enviar mensagem"
+    }
+}
+
+
