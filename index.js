@@ -1,10 +1,11 @@
 
 
 const images = [
-  'media/img1.jpeg',
-  'media/img2.jpeg',
+  'media/img1.jpg',
+  'media/img2.jpg',
   'media/img3.jpg',
-  'media/img6.jpg'
+  'media/img6.jpg',
+  'media/img7.jpg'
 ];
 
 const background = document.getElementById('background');
