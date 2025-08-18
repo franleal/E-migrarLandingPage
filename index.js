@@ -3,7 +3,8 @@
 const images = [
   'media/img1.jpeg',
   'media/img2.jpeg',
-  'media/img3.jpg'
+  'media/img3.jpg',
+  'media/img6.jpg'
 ];
 
 const background = document.getElementById('background');
