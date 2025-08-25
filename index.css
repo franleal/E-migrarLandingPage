@@ -338,14 +338,22 @@ h4{
 }
 
 /*-----------------------------------PC SCREEN SECTION--------------------------------------------*/
-@media (width >= 1200px) {
+@media (min-width: 1650px) {
+    h4 {
+        font-size: 1.5rem;
+        padding: 15px;
+    }
+    .info_text {
+        font-size: 25px;
+    }
+}
 
-    h4{
+@media (min-width: 1850px) {
+    h4 {
         font-size: 2rem;
         padding: 15px;
     }
-    .info_text{
+    .info_text {
         font-size: 30px;
     }
-    
 }
