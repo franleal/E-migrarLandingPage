@@ -1,5 +1,4 @@
 
-
 const images = [
   'media/img1.jpg',
   'media/img2.jpg',
@@ -9,16 +8,57 @@ const images = [
 ];
 
 const background = document.getElementById('background');
-let index = 0
+let index = 0;
+let timer = null;
 
-
-const change_background = () => {
-    background.style.backgroundImage = `url(${images[index]})`;
-    index = (index + 1) % images.length;
+// cache simple de cargas
+const loaded = new Map();
+function preload(src){
+  return new Promise((resolve, reject) => {
+    if (loaded.get(src)) return resolve();
+    const img = new Image();
+    img.onload = () => { loaded.set(src, true); resolve(); };
+    img.onerror = reject;
+    img.src = src;
+  });
 }
 
-change_background();
-setInterval(change_background, 3000);
+async function setBackground(src){
+  // asegura que la imagen esté en caché antes de mostrarla
+  await preload(src);
+  // mini fade
+  background.style.opacity = 0;
+  requestAnimationFrame(() => {
+    background.style.backgroundImage = `url("${src}")`;
+    // fuerza reflow para que la transición aplique
+    void background.offsetHeight;
+    background.style.opacity = 1;
+  });
+}
+
+async function startSlideshow(){
+  // 1) Carga y muestra la primera; recién ahí aparece el contenedor
+  await setBackground(images[0]);
+  background.classList.add('ready');
+
+  // 2) Pre-carga el resto en paralelo
+  images.slice(1).forEach(preload);
+
+  // 3) Rotación normal
+  timer = setInterval(async () => {
+    index = (index + 1) % images.length;
+    await setBackground(images[index]);
+  }, 3000);
+}
+
+// Inicia cuando el DOM está listo
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', startSlideshow);
+} else {
+  startSlideshow();
+}
+
+
 
 
 let traslates = {};
