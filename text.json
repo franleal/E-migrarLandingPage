@@ -18,7 +18,12 @@
         "apellido":"Ingrese su apellido",
         "email":"Ingrese su email",
         "mensaje":"Escriba su mensaje",
-        "send_button":"Enviar mensaje"
+        "send_button":"Enviar mensaje",
+        "title_alert":"¡Mensaje enviado!",
+        "text_alert": "Gracias por por confiar en E-migrAR. Te responderemos a la brevedad.",
+        "confirm_ButtonText":"Cerrar",
+        "alert_error_title": "No se pudo enviar",
+        "alert_error_text": "Intenta nuevamente en unos segundos."
     },
     "eng":{
         "title":"Welcome to E-migrAR",
@@ -39,7 +44,12 @@
         "apellido": "Enter your last name",
         "email": "Enter your email",
         "mensaje": "Write your message",
-        "send_button": "Send message"
+        "send_button": "Send message",
+        "title_alert":"¡Message sent!",
+        "text_alert": "Thanks for trusting E-migrAR. We’ll get back to you soon.",
+        "confirm_ButtonText":"Close",
+        "alert_error_title": "Couldn’t send",
+        "alert_error_text": "Please try again in a few seconds."
     },
     "pt":{
         "title":"Bem-vindo à E-migrAR",
@@ -60,7 +70,13 @@
         "apellido": "Digite seu sobrenome",
         "email": "Digite seu e-mail",
         "mensaje": "Escreva sua mensagem",
-        "send_button": "Enviar mensagem"
+        "send_button": "Enviar mensagem",
+        "title_alert": "Mensagem enviada!",
+        "text_alert": "Obrigado por confiar na E-migrAR. Responderemos em breve.",
+        "confirm_ButtonText":"Fechar",
+        "alert_error_title": "Não foi possível enviar",
+        "alert_error_text": "Tente novamente em alguns segundos."
+        
     }
 }
 

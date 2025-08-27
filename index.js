@@ -98,20 +98,34 @@ function setLanguage(lang) {
 
 }
 
+const form = document.getElementById("form_container")
 const btn = document.getElementById('send_button');
 
-document.getElementById('form_container')
-  .addEventListener('submit', function(event) {
+form.addEventListener('submit', function(event) {
    event.preventDefault();
 
-   const serviceID = 'default_service';
-   const templateID = 'template_b0a7qnh';
-
+    const serviceID = 'default_service';
+    const templateID = 'template_b0a7qnh';
+    const lang = localStorage.getItem("lang") || "es";
    emailjs.sendForm(serviceID, templateID, this)
     .then(() => {
-      alert('Sent!');
+      
+      form.reset();
+      Swal.fire({
+        icon: 'success',
+        title: traslates[lang].title_alert,
+        text: traslates[lang].text_alert,
+        confirmButtonText: traslates[lang].confirm_ButtonText,
+        showClass: { popup: 'swal2-show' },
+        hideClass: { popup: 'swal2-hide' }
+      });
     }, (err) => {
       btn.value = 'Send Email';
-      alert(JSON.stringify(err));
+      Swal.fire({
+        icon: 'error',
+        title: traslates[lang].alert_error_title,
+        text: traslates[lang].alert_error_text,
+        footer: `<pre style="text-align:left;white-space:pre-wrap">${JSON.stringify(err, null, 2)}</pre>`
+      });
     });
 });
